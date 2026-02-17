@@ -26,6 +26,8 @@
         "build:ts": "bun build ts/index.ts --outfile dist/index.js",
         "postbuild": "tsc -p tsconfig.json --outDir dist && rm -f dist/macro.d.ts",
         "build": "bun run build:wasm && bun run build:ts && bun run postbuild",
+        "prepare": "bun run build",
+        "prepack": "bun run build",
         "prepublishOnly": "bun run build"
     },
     "devDependencies": {
