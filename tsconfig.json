@@ -10,6 +10,7 @@
     "forceConsistentCasingInFileNames": true,
     /* These two options are crucial for the postbuild step */
     "declaration": true,
+    "typeRoots": ["./types", "./node_modules/@types"],
     "emitDeclarationOnly": true
   },
   "include": ["ts/**/*.ts"]
