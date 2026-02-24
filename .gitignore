@@ -3,3 +3,4 @@ node_modules
 *.tgz
 *.xml
 docs
+dist
